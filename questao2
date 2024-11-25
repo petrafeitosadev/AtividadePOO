@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    
+  <p>2º Pra que serve o < body >< /body > ?</p>
+  <form action="">
+      <input type="radio" id="alternativa1" name="alternativa" value="alternativa1">
+      <label for="html">para definir o tamanho do web site</label><br>
+      <input type="radio" id="alternativa2" name="alternativa" value="alternativa2">
+      <label for="css">para adiconar coisas ao site </label><br>
+      <input type="radio" id="alternativa3" name="alternativa" value="alternativa3">
+      <label for="javascript">para escrever textos</label><br>
+      <input type="button" onclick="ChecarResposta()" value="Checar Resposta">
+  
+  </form>
+  
+  <script>
+  function ChecarResposta(){
+      const alternativaCorreta = "alternativa2"
+  const opcaoEscolhida = document.querySelector ('input[name="alternativa"]:checked')
+  if(opcaoEscolhida){
+  if(opcaoEscolhida.value === alternativaCorreta){
+  alert("Resposta Correta")
+  window.location.href = ("questao2.html")
+    }else{
+  alert("Escolheu a alternativa errada")
+    }
+    }else{
+  alert("Escolha uma alternatica")
+    }
+  }
+  </script>
+   
+</body>
+</html>
+‎quest1.html
++44
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,44 @@
+[2:03 AM, 14/10/2024] Leo: <!DOCTYPE html>
+<html lang="pt">
+    <link rel="DOCTYPE" href="quest2.html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title> 
+    <link rel="stylesheet" href="quest.css">
+</head>
+<body>
+    
+<p>1º Pergunta: qual tag pra pular de linha no html?</p>
+<form action="">
+    <input type="radio" id="alternativa1" name="alternativa" value="alternativa1">
+    <label for="html"> < br > < /br ></label><br>
+    <input type="radio" id="alternativa2" name="alternativa" value="alternativa2">
+    <label for="css">< pr > < /pr ></pr></label><br>
+    <input type="radio" id="alternativa3" name="alternativa" value="alternativa3">
+    <label for="javascript">< qr > < /qr ></label><br>
+    <input type="button" onclick="ChecarResposta()" value="Checar Resposta">
+</form>
+<script>
+function ChecarResposta(){
+    const alternativaCorreta = "alternativa1"
+const opcaoEscolhida = document.querySelector ('input[name="alternativa"]:checked')
+if(opcaoEscolhida){
+if(opcaoEscolhida.value === alternativaCorreta){
+alert("Resposta Correta")
+window.location.href = ("questao2.html")
+  }else{
+alert("Escolheu a alternativa errada")
+  }
+  }else{
+alert("Escolha uma alternatica")
+  }
+}
+</script>
+<iframe src="quest02.html" width="600" height="400"></iframe>
+</body>
+</html>
